@@ -1,0 +1,90 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+ 
+    
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color: black;
+}
+
+@font-face {
+    font-family: "CustomFont";
+     src: url("font/Oswald/Oswald-VariableFont_wght.woff") format("woff");
+
+}
+div.entete {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(179, 179, 179, 0.226);
+}
+div.logo {
+    margin-left: 5vw;
+}
+div.Sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+div.Reparer, div.meContacter, div.QuiSuisJe {
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+
+  .button {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.274);
+    padding: 15px 50px;
+    margin: 0 auto;
+  }
+  .button span {
+    position: relative;
+    z-index: 1;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 470%;
+    width: 140%;
+    background: rgba(255, 255, 255, 0.4);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+  }
+  .button:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+
+
+  .title {
+    display: flex;
+    justify-content: center;
+  }
